@@ -1,12 +1,4 @@
 
- --This report aims to provide patent-based information on technologies and patenting trends in football boots/cleat/shoes. 
- --It covers patent applications, granted patents, countries of origin and priority revealing interesting facets of related research and innovation.
- --The concept of football boots has been there for a very long time. 
- --However, over the years, they have kept evolving like every other part of the sports due to better research and advancement in technology.
- --The data was sourced from the Lens data base using patent searching techniques to get patents related to football boots/cleat/shoes.
-
- ------------------------------------------------------------------------------------------------------------------------------------------------
-
  --The title of a patent can reveal the technical areas in which patent applications are being filed.
  --A count of recurring words in the title column shed light in the areas in which patents are being filed.
  --The count will look at words with more than 3 letters.
@@ -52,7 +44,7 @@
  group by Document_Type
 
  -----------------------------------------------------------------------------------------------------------------------------------------------
- --Determining the legal_status vs count of patent documents vs publication year.
+ --legal_status vs count of patent documents vs publication year.
  --This will show which patents are active, expired, Pending etc
 
  SELECT distinct(Legal_Status), Count(Legal_Status) as Status_Count, Publication_Year
@@ -80,8 +72,6 @@
 
 
  -----------------------------------------------------------------------------------------------------------------------------------------------
- 
- 
   --Number of patent publication per country by year
   --This will show the countries with potential for protection based on low numbers.
   
