@@ -7,7 +7,7 @@
     SELECT
         TRIM(value) AS word
     FROM
-        [master].[dbo].[NASA_Patents]
+        [master].[dbo].[lens-export]
     CROSS APPLY
         STRING_SPLIT(Title, ' ')
     WHERE LEN(TRIM(value)) > 3
